@@ -1,0 +1,123 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'argo-rate-limiter' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose read json /Users/ApigeeCorporation/argoapps/fsqproxy/package.json
+5 verbose read json /Users/ApigeeCorporation/argoapps/fsqproxy/node_modules/argo/package.json
+6 verbose from cache /Users/ApigeeCorporation/argoapps/fsqproxy/package.json
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'argo-rate-limiter@0.0.1', null ]
+9 verbose cache add name=undefined spec="argo-rate-limiter@0.0.1" args=["argo-rate-limiter@0.0.1",null]
+10 verbose parsed url { pathname: 'argo-rate-limiter@0.0.1',
+10 verbose parsed url   path: 'argo-rate-limiter@0.0.1',
+10 verbose parsed url   href: 'argo-rate-limiter@0.0.1' }
+11 verbose cache add name="argo-rate-limiter" spec="0.0.1" args=["argo-rate-limiter","0.0.1"]
+12 verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+13 verbose addNamed [ 'argo-rate-limiter', '0.0.1' ]
+14 verbose addNamed [ '0.0.1', '0.0.1' ]
+15 silly lockFile dc484186-argo-rate-limiter-0-0-1 argo-rate-limiter@0.0.1
+16 verbose lock argo-rate-limiter@0.0.1 /Users/ApigeeCorporation/.npm/dc484186-argo-rate-limiter-0-0-1.lock
+17 verbose url raw argo-rate-limiter/0.0.1
+18 verbose url resolving [ 'https://registry.npmjs.org/', './argo-rate-limiter/0.0.1' ]
+19 verbose url resolved https://registry.npmjs.org/argo-rate-limiter/0.0.1
+20 info trying registry request attempt 1 at 15:59:25
+21 verbose etag "7F0QYHPHHS89GKUINEC0UG0KF"
+22 http GET https://registry.npmjs.org/argo-rate-limiter/0.0.1
+23 http 304 https://registry.npmjs.org/argo-rate-limiter/0.0.1
+24 silly registry.get cb [ 304,
+24 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+24 silly registry.get     etag: '"7F0QYHPHHS89GKUINEC0UG0KF"',
+24 silly registry.get     date: 'Tue, 23 Jul 2013 19:59:26 GMT',
+24 silly registry.get     'content-length': '0' } ]
+25 verbose etag argo-rate-limiter/0.0.1 from cache
+26 verbose read json /Users/ApigeeCorporation/.npm/argo-rate-limiter/0.0.1/package/package.json
+27 silly lockFile 7663097f-iter-argo-rate-limiter-0-0-1-tgz https://registry.npmjs.org/argo-rate-limiter/-/argo-rate-limiter-0.0.1.tgz
+28 verbose lock https://registry.npmjs.org/argo-rate-limiter/-/argo-rate-limiter-0.0.1.tgz /Users/ApigeeCorporation/.npm/7663097f-iter-argo-rate-limiter-0-0-1-tgz.lock
+29 verbose addRemoteTarball [ 'https://registry.npmjs.org/argo-rate-limiter/-/argo-rate-limiter-0.0.1.tgz',
+29 verbose addRemoteTarball   '6819019c41c896e6c5dcbf9eed82fc2565aaff02' ]
+30 info retry fetch attempt 1 at 15:59:26
+31 verbose fetch to= /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+32 http GET https://registry.npmjs.org/argo-rate-limiter/-/argo-rate-limiter-0.0.1.tgz
+33 http 200 https://registry.npmjs.org/argo-rate-limiter/-/argo-rate-limiter-0.0.1.tgz
+34 silly shasum updated bytes 18870
+35 info shasum 6819019c41c896e6c5dcbf9eed82fc2565aaff02
+35 info shasum /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+36 verbose tar unpack /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+37 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+38 verbose lock /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package /Users/ApigeeCorporation/.npm/cd64f458-66194-0-3111900764051825-package.lock
+39 silly lockFile 0173f811-66194-0-3111900764051825-tmp-tgz /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+40 verbose lock /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz /Users/ApigeeCorporation/.npm/0173f811-66194-0-3111900764051825-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry limit.js
+46 silly gunzTarPerm extractEntry example/package.json
+47 silly gunzTarPerm extractEntry example/server.js
+48 silly gunzTarPerm extractEntry example/node_modules/argo/package.json
+49 silly gunzTarPerm extractEntry example/node_modules/argo/.npmignore
+50 silly gunzTarPerm extractEntry example/node_modules/argo/README.md
+51 silly gunzTarPerm extractEntry example/node_modules/argo/LICENSE
+52 silly gunzTarPerm extractEntry example/node_modules/argo/argo.js
+53 silly gunzTarPerm extractEntry example/node_modules/argo/runner.js
+54 silly gunzTarPerm extractEntry example/node_modules/argo/builder.js
+55 silly gunzTarPerm extractEntry example/node_modules/argo/frame.js
+56 silly gunzTarPerm extractEntry example/node_modules/argo/linked_list.js
+57 silly gunzTarPerm extractEntry example/node_modules/argo/tracer.js
+58 silly gunzTarPerm extractEntry example/node_modules/argo/AUTHORS
+59 silly gunzTarPerm extractEntry example/node_modules/argo/bin/_coverage
+60 silly gunzTarPerm extractEntry example/node_modules/argo/test/argo.js
+61 silly gunzTarPerm extractEntry example/node_modules/argo/test/incoming_message.js
+62 silly gunzTarPerm extractEntry example/node_modules/argo/example/package.json
+63 silly gunzTarPerm extractEntry example/node_modules/argo/example/cors.js
+64 silly gunzTarPerm extractEntry example/node_modules/argo/example/forecasts.js
+65 silly gunzTarPerm extractEntry example/node_modules/argo/example/hello.js
+66 silly gunzTarPerm extractEntry example/node_modules/argo/example/pipeworks.js
+67 silly gunzTarPerm extractEntry example/node_modules/argo/example/file.js
+68 silly gunzTarPerm extractEntry example/node_modules/argo/example/oauth_options.js
+69 silly gunzTarPerm extractEntry example/node_modules/argo/example/passthrough.js
+70 silly gunzTarPerm extractEntry example/node_modules/argo/example/protected.js
+71 silly gunzTarPerm extractEntry example/node_modules/argo/example/map.js
+72 silly gunzTarPerm extractEntry example/node_modules/argo/example/hello.txt
+73 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/package.json
+74 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/.npmignore
+75 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/README.md
+76 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/LICENSE
+77 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/linked_list.js
+78 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/pipeworks.js
+79 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/example/example.js
+80 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/example/mapped.js
+81 silly gunzTarPerm extractEntry example/node_modules/argo/node_modules/pipeworks/example/simple.js
+82 verbose read json /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package/package.json
+83 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+84 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+85 silly lockFile 0173f811-66194-0-3111900764051825-tmp-tgz /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+86 silly lockFile 0173f811-66194-0-3111900764051825-tmp-tgz /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/tmp.tgz
+87 verbose from cache /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package/package.json
+88 verbose tar pack [ '/Users/ApigeeCorporation/.npm/argo-rate-limiter/0.0.1/package.tgz',
+88 verbose tar pack   '/var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package' ]
+89 verbose tarball /Users/ApigeeCorporation/.npm/argo-rate-limiter/0.0.1/package.tgz
+90 verbose folder /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+91 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+92 verbose lock /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package /Users/ApigeeCorporation/.npm/cd64f458-66194-0-3111900764051825-package.lock
+93 silly lockFile 02c30d9d-o-rate-limiter-0-0-1-package-tgz /Users/ApigeeCorporation/.npm/argo-rate-limiter/0.0.1/package.tgz
+94 verbose lock /Users/ApigeeCorporation/.npm/argo-rate-limiter/0.0.1/package.tgz /Users/ApigeeCorporation/.npm/02c30d9d-o-rate-limiter-0-0-1-package-tgz.lock
+95 error tar pack Error reading /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+96 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+97 silly lockFile cd64f458-66194-0-3111900764051825-package /var/folders/lw/wfsq7ycd1299lqv8hnd5_pgw0000gn/T/npm-935/1374609566194-0.3111900764051825/package
+98 error TypeError: Cannot call method 'filter' of undefined
+98 error     at Packer.IgnoreReader.addIgnoreRules (/usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:148:13)
+98 error     at Packer.IgnoreReader.addIgnoreFile (/usr/local/lib/node_modules/npm/node_modules/fstream-npm/node_modules/fstream-ignore/ignore.js:133:10)
+98 error     at fs.readFile (fs.js:176:14)
+98 error     at Object.oncomplete (fs.js:297:15)
+99 error If you need help, you may report this log at:
+99 error     <http://github.com/isaacs/npm/issues>
+99 error or email it to:
+99 error     <npm-@googlegroups.com>
+100 error System Darwin 12.4.0
+101 error command "node" "/usr/local/bin/npm" "install" "argo-rate-limiter"
+102 error cwd /Users/ApigeeCorporation/argoapps/fsqproxy
+103 error node -v v0.8.22
+104 error npm -v 1.2.14
+105 error type non_object_property_call
+106 verbose exit [ 1, true ]
