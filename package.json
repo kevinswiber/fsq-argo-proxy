@@ -11,5 +11,9 @@
   },
   "repository": "",
   "author": "@mdobs",
-  "license": "BSD"
+  "license": "BSD",
+  "engines": {
+    "node": ">= v0.8.x",
+    "npm": ">= 1.2.x"
+  }
 }
