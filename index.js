@@ -45,10 +45,10 @@ argo()
         } else {
           venues.push({
             "name":body.response.venue.name,
-            "city":venue.venue.location.city,
+            "city":body.response.venue.location.city,
                 "location":{
-                  "lat":venue.venue.location.lat, 
-                  "lng":venue.venue.location.lng
+                  "lat":body.response.venue.location.lat, 
+                  "lng":body.response.venue.location.lng
                 }
           });
         }
