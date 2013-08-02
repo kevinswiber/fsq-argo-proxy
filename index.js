@@ -26,13 +26,9 @@ argo()
      next(env);
     });
     handle("response", function(env, next){
-      if (env.request.url.indexOf('favicon.ico')!== -1) {
-        console.log('favicon');
-        next(env);
-      } else {
-        var enc_type = env.target.response.headers['content-encoding'];
+      var enc_type = env.target.response.headers['content-encoding'];
       var response_buffer = []
-      if (enc_type === 'gzip') {
+      if (enc_type && enc_type === 'gzip') {
         var unzip = zlib.createGunzip();
         console.log("gzip");
         env.target.response.pipe(unzip);
@@ -92,7 +88,7 @@ argo()
                 });
               });
             });
-          } else {
+          } else if(body.response.venue) {
             venues.push({
               "name":body.response.venue.name,
               "city":body.response.venue.location.city,
@@ -101,11 +97,12 @@ argo()
                     "lng":body.response.venue.location.lng
                   }
             });
+          } else {
+            next(env);
           }
           env.target.response.body = JSON.stringify(venues); 
           next(env);
         });
-        }
       }
     });
   })
